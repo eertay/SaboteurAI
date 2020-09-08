@@ -29,10 +29,10 @@ public class Minimax {
 					
 					bestMove = nextMove;
 					
-					/* 
-					if ((MyTools.numTilesLeftToNugget(boardState) < 5) && MyTools.tileHasContinuousPath(boardState.getAllLegalMoves())){
+			
+					if ((MyTools.numTilesLeftToNugget(boardState) < 5) && MyTools.tileHasContinuousPath(boardState.getAllLegalMoves())) {
 		    			bestMove = MyTools.playContinuousTile(boardState.getAllLegalMoves());
-		    		}  */
+					}  
 					
 				}
 			}
@@ -61,8 +61,7 @@ public class Minimax {
 			}
 		}
 		
-		System.out.println("?????????????? BEST DISTANCE FROM GOLDEN NUGGET : " + MyTools.distanceFromGoldenNugget(boardState, bestMove));
-		System.out.println("!!!!!!!!!!!!!!!!!");
+		System.out.println("BEST DISTANCE FROM GOLDEN NUGGET : " + MyTools.distanceFromGoldenNugget(boardState, bestMove));
 		
 		return bestMove;
 	}
