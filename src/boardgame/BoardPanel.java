@@ -21,6 +21,7 @@ import javax.swing.JPanel;
  *
  * A BoardPanel may respond to requests for user input by overriding the
  * requestMove() and cancelMoveRequest() methods.
+ *
  */
 public class BoardPanel extends JPanel {
     private static final long serialVersionUID = 1L;
